@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
+import Image from "next/image";
+import { lusitana } from "@/app/ui/fonts";
+import Search from "@/app/ui/search";
 import {
   CustomersTableType,
   FormattedCustomersTable,
-} from '@/app/lib/definitions';
+} from "@/app/lib/definitions";
 
 export default async function CustomersTable({
   customers,
@@ -66,19 +66,19 @@ export default async function CustomersTable({
                 <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
                   <tr>
                     <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                      Name
+                      {"Name"}
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Email
+                      {"Email"}
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Total Invoices
+                      {"Total Invoices"}
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Total Pending
+                      {"Total Pending"}
                     </th>
                     <th scope="col" className="px-4 py-5 font-medium">
-                      Total Paid
+                      {"Total Paid"}
                     </th>
                   </tr>
                 </thead>

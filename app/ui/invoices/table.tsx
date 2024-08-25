@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import { UpdateInvoice, DeleteInvoice } from '@/app/ui/invoices/buttons';
-import InvoiceStatus from '@/app/ui/invoices/status';
-import { formatDateToLocal, formatCurrency } from '@/app/lib/utils';
-import { fetchFilteredInvoices } from '@/app/lib/data';
+import Image from "next/image";
+import { UpdateInvoice, DeleteInvoice } from "@/app/ui/invoices/buttons";
+import InvoiceStatus from "@/app/ui/invoices/status";
+import { formatDateToLocal, formatCurrency } from "@/app/lib/utils";
+import { fetchFilteredInvoices } from "@/app/lib/data";
 
 export default async function InvoicesTable({
   query,
@@ -58,22 +58,22 @@ export default async function InvoicesTable({
             <thead className="rounded-lg text-left text-sm font-normal">
               <tr>
                 <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                  Customer
+                  {"Customer"}
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Email
+                  {"Email"}
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Amount
+                  {"Amount"}
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Date
+                  {"Date"}
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
-                  Status
+                  {"Status"}
                 </th>
                 <th scope="col" className="relative py-3 pl-6 pr-3">
-                  <span className="sr-only">Edit</span>
+                  <span className="sr-only">{"Edit"}</span>
                 </th>
               </tr>
             </thead>
@@ -113,6 +113,7 @@ export default async function InvoicesTable({
                       <DeleteInvoice id={invoice.id} />
                     </div>
                   </td>
+                  x
                 </tr>
               ))}
             </tbody>
